@@ -25,7 +25,7 @@ const Post_Header = () => {
             </ul>
             <div className="d-flex my-2 align-items-center">
                 <button className="btn" aria-label="write-post" style={{ background: 'rgb(242, 242, 242)' }}>
-                    Write Post
+                    Write a Post
                     <img src={triangle} alt="arrow down" />
                 </button>
                 <button className="btn btn-primary ms-2 gap-2 d-flex align-items-center" aria-label="Join group" style={{ border: '0.8px solid rgb(152, 152, 153)' }}>

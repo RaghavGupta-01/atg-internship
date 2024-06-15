@@ -40,6 +40,13 @@ code {
   }
 }
 
+@media (max-width: 992px) {
+  .custom-bg-container {
+    height: 236px !important
+  }
+}
+
+
 .nav-link {
   color: #8a8a8a !important;
   font-size: 16px;
@@ -69,4 +76,50 @@ code {
 .join-group:hover {
   color: #fff;
   background-color: #0003
+}
+
+.imagePost {
+  height: 220px;
+  border-radius: 4px 4px 0 0;
+  background-color: #c4c4c4
+}
+
+.post-link {
+  border-radius: 10px !important;
+  border: .7px solid #a9aeb8 !important;
+  background: #fff !important
+}
+
+@media screen and (min-width: 992px) {
+  .posts-center {
+    flex: 1 0 auto !important
+  }
+}
+
+.input-text {
+  outline: none;
+  border: none
+}
+
+.location-info {
+  color: #000 ; 
+  opacity: .5;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal
+}
+
+.text-recommended {
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.4px;
+  text-transform: uppercase
+}
+
+.follow {
+  background: #edeef0 !important
 }
