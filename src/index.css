@@ -11,3 +11,62 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.search-button {
+  border: none;
+  border-radius: 21px 0 0 21px;
+  background-color: #f2f2f2;
+  padding-left: 14px;
+}
+
+.search-input {
+  border: none !important;
+  background-color: #f2f2f2 !important;
+  border-radius: 0 21px 21px 0 !important
+}
+
+.search-input:focus {
+  box-shadow: none !important;
+  background: #f2f2f2
+}
+
+.banner-text {
+  justify-content: space-between
+}
+
+@media screen and (min-width: 992px) {
+  .banner-text {
+    justify-content: end
+  }
+}
+
+.nav-link {
+  color: #8a8a8a !important;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal
+}
+
+.nav-link.active {
+  color: #000 !important;
+  font-family: IBM Plex Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal
+}
+
+.join-group {
+  color: #fff !important;
+  border: .8px solid #ffff !important;
+  font-size: 12px !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  line-height: normal !important
+}
+
+.join-group:hover {
+  color: #fff;
+  background-color: #0003
+}
