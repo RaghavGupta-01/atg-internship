@@ -64,7 +64,7 @@ code {
   line-height: normal
 }
 
-.join-group {
+.join-leave-group {
   color: #fff !important;
   border: .8px solid #ffff !important;
   font-size: 12px !important;
@@ -122,4 +122,50 @@ code {
 
 .follow {
   background: #edeef0 !important
+}
+
+.custom-modal-header {
+  color: #008a45;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px
+}
+
+.info-signup {
+  color: #000  !important;
+  opacity: .6 !important;
+  text-align: right !important;
+  font-family: IBM Plex Sans !important;
+  font-size: 11px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: 16px !important;
+  letter-spacing: -.088px
+}
+
+.button-signup-group {
+  border-radius: 2px !important;
+  border: .6px solid #d9d9db !important;
+  background: #fff !important
+}
+
+.forgot {
+  color: #000;
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: -.096px
+}
+
+.custom-input {
+  border-radius: 2px 2px 0 0 !important; 
+  border: 1px solid #d9d9db !important;
+  background: #f7f8fa !important
+}
+
+.dropdown .show {
+  transform: translate3d(-116px, 30.5px, 0) !important
 }

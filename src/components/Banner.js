@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import banner from '../assets/banner.jpeg'
 import back from '../assets/back.svg'
 
 const Banner = () => {
+  const [JoinGroup, setJoingroup] = useState(false);
+  const toggleJoinGroup = () => {
+    setJoingroup((prevState) => !prevState);
+  };
   return (
     <div className="container-fluid p-0 position-relative custom-bg-container"
       style={{ backgroundImage: `url(${banner})`, backgroundSize: 'cover', backgroundPosition: 'center', height: '440px' }}>
@@ -12,7 +16,13 @@ const Banner = () => {
           <button className="btn">
             <img src={back} alt="back" />
           </button>
-          <button className="btn join-group">Leave Group</button>
+          <button className="btn join-leave-group" onClick={toggleJoinGroup}>
+            {JoinGroup ? (
+              <span>Leave Group</span>
+            ) : (
+              <span>Join Group</span>
+            )}
+          </button>
         </div>
         <div>
           <h1 className="text-white">Computer Engineering</h1>

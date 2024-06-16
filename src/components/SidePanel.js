@@ -1,4 +1,4 @@
-import React, { act } from 'react'
+import React, { useState } from 'react'
 import location from '../assets/post_images/location.svg'
 import cross from '../assets/cross.svg'
 import caution from '../assets/caution.svg'
@@ -10,6 +10,10 @@ import philosophy from '../assets/groups_images/philosophy.jpeg'
 
 
 const SidePanel = () => {
+    const [Follow, setFollow] = useState(false);
+    const toggleFollow = () => {
+        setFollow((prevState) => !prevState);
+    };
     return (
         <>
             <div className="d-flex justify-content-between">
@@ -36,28 +40,36 @@ const SidePanel = () => {
                         <img className="rounded-circle" src={leisure} alt="Profile" width="36" height="36" />
                         <div className="text-wrapper">Leisure</div>
                     </div>
-                    <a className="btn follow rounded-5" href="/">Follow</a>
+                    <div onClick={toggleFollow}>
+                        {Follow ? (
+                            <span className="btn rounded-5" style={{ color: '#FFFFFF', background: '#000000' }}>Followed</span>
+
+                        ) : (
+                            <span className="btn rounded-5" style={{ color: '#000000', background: '#EDEEF0' }}>Follow</span>
+
+                        )}
+                    </div>
                 </div>
                 <div className="d-flex align-items-center justify-content-between">
                     <div className="d-flex align-items-center gap-2">
                         <img className="rounded-circle" src={activism} alt="Profile" width="36" height="36" />
                         <div className="text-wrapper">Activism</div>
                     </div>
-                    <a className="btn follow rounded-5" href="/">Follow</a>
+                    <span className="btn follow rounded-5" >Follow</span>
                 </div>
                 <div className="d-flex align-items-center justify-content-between">
                     <div className="d-flex align-items-center gap-2">
                         <img className="rounded-circle" src={mba} alt="Profile" width="36" height="36" />
                         <div className="text-wrapper">MBA</div>
                     </div>
-                    <a className="btn follow rounded-5" href="/">Follow</a>
+                    <span className="btn follow rounded-5" >Follow</span>
                 </div>
                 <div className="d-flex align-items-center justify-content-between">
                     <div className="d-flex align-items-center gap-2">
                         <img className="rounded-circle" src={philosophy} alt="Profile" width="36" height="36" />
                         <div className="text-wrapper">Philosophy</div>
                     </div>
-                    <a className="btn follow rounded-5" href="/">Follow</a>
+                    <span className="btn follow rounded-5" >Follow</span>
                 </div>
             </div>
             <button className="btn d-flex text-end mt-5 text-primary align-self-end " >See More...</button>
