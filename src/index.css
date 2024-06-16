@@ -30,6 +30,15 @@ code {
   background: #f2f2f2
 }
 
+.custom-btn-create {
+  color: #2e2e2e;
+  text-align: right;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal
+}
+
 .banner-text {
   justify-content: space-between
 }
@@ -102,7 +111,7 @@ code {
 }
 
 .location-info {
-  color: #000 ; 
+  color: #000;
   opacity: .5;
   font-size: 12px;
   font-style: normal;
@@ -133,7 +142,7 @@ code {
 }
 
 .info-signup {
-  color: #000  !important;
+  color: #000 !important;
   opacity: .6 !important;
   text-align: right !important;
   font-family: IBM Plex Sans !important;
@@ -161,11 +170,50 @@ code {
 }
 
 .custom-input {
-  border-radius: 2px 2px 0 0 !important; 
+  border-radius: 2px 2px 0 0 !important;
   border: 1px solid #d9d9db !important;
   background: #f7f8fa !important
 }
 
 .dropdown .show {
   transform: translate3d(-116px, 30.5px, 0) !important
+}
+
+.circle-write-post {
+  height: 54px;
+  width: 54px;
+  background: linear-gradient(180deg, #ff5c5c, #f0568a);
+  filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, .08)) drop-shadow(0px 2px 4px rgba(0, 0, 0, .18))
+}
+
+.forgot {
+  color: #000 !important;
+  text-align: center !important;
+  font-size: 12px !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+
+}
+
+.custom-main-button {
+  top: 22px;
+  padding: 0 16px
+}
+
+.text-main-posts {
+  color: #212529;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: .14px
+}
+
+.btn-filter {
+  background: #f1f3f5 !important;
+  color: #212529 !important;
+  font-size: 13px !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  line-height: normal !important
 }

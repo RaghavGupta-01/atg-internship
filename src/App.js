@@ -6,6 +6,8 @@ import Education from './components/posts/Education';
 import Meetup_Event from './components/posts/Meetup_Event';
 import Job from './components/posts/Job';
 import SidePanel from './components/SidePanel';
+import CreateAccountModal from './components/CreateAccountModal';
+import triangle from './assets/triangle.svg'
 import './App.css';
 
 
@@ -20,6 +22,12 @@ function App() {
       <div className="mx-auto d-flex gap-5 justify-content-center" style={{ maxWidth: '1040px' }}>
 
         <div className="posts-center position-relative ">
+          <div class="d-flex d-lg-none w-100 position-absolute top-4 align-items-center justify-content-between custom-main-button">
+            <div class="text-main-posts">Posts(368)</div>
+            <button class="btn btn-filter d-flex align-items-center gap-2">Filter : All
+              <img src={triangle} alt="triangle" width="20" height="20" />
+            </button>
+          </div>
           <main className="d-flex flex-column gap-4 ">
             <Article />
             <Education />
@@ -33,7 +41,7 @@ function App() {
         </div>
 
       </div>
-
+      <CreateAccountModal />
     </div>
   );
 }
